@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: gba(45, 54, 65, 0.75);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
+.container-1 textarea {
+  height: 570px;
+}
+
+.container-2 {
+  width: 50%;
+}
+
+.container-2 .line-numbers button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 90px;
+  height: 40px;
+}
+
+.container-2 .line-numbers button:hover {
+  cursor: pointer;
+}
+
+.container-3 {
+  display: flex;
+  height: 300px;
+}
+
+.container-3 .originalVisualize {
+  width: 50%;
+  margin: 10px;
+}
+
+.container-3 .resultVisualize {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.container-3 .result {
+  max-height: 300px;
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+}
+
+pre code {
+  display: block;
+  background: none;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+code {
+  font-family: monospace;
+}
+
+.line-numbers {
+  height: 570px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.general-button {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #29323c,
+    #485563,
+    #2b5876,
+    #4e4376
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.general-button:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.general-button:focus {
+  outline: none;
+}
+
+.output-title {
+  background-color: #fff;
+}
