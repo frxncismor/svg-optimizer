@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SVG Optimizer</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container-1">
+      <h3>Original</h3>
+      <textarea name="input" id="myTextarea" cols="80" rows="30"></textarea>
+    </div>
+    <div class="container-buttons">
+      <button class="general-button" onclick="captureInput()">Optimizar</button>
+      <button class="general-button" onclick="unifyPaths()">Unificar</button>
+    </div>
+    <div class="container-2">
+      <h3 class="output-title">Result</h3>
+      <pre class="line-numbers">
+        <button id="copyButton" class="general-button" onclick="copyCode()">Copy</button>
+        <code class="language-css">
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="container-3">
+    <div class="originalVisualize">
+      <h3>Original</h3>
+      <div class="original"></div>
+    </div>
+    <div class="resultVisualize">
+      <h3>Result</h3>
+      <div class="result"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
